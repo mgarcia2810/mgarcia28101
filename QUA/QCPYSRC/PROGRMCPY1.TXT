@@ -1,0 +1,5 @@
+C                   CALL      'CCRTVFEC'
+C                   PARM                    FECHA            11
+C                   PARM                    FORMA             1
+C                   PARM                    MNCAPL            2
+C                   PARM                    MODULO           60

@@ -1,0 +1,101 @@
+      *  START OF SPECIFICATIONS   ******************************
+      *                                                         *
+      * PHYSICAL FILE MEMBER NAME:  QDSIGNON2                   *
+      *                                                         *
+      *  END OF SPECIFICATIONS   ********************************
+      *
+      *
+      **************************************************************************
+      *                                Sign On                                 *
+      *                                       System  . . . . . :   XXXXXXXX   *
+      *                                       Subsystem . . . . :   XXXXXXXXXX *
+      *                                       Display . . . . . :   XXXXXXXXXX *
+      *                                                                        *
+      *            User  . . . . . . . . . . . . . .   ___________             *
+      *            Password  . . . . . . . . . . . .                           *
+      *            Program/procedure . . . . . . . .   ___________             *
+      *            Menu  . . . . . . . . . . . . . .   ___________             *
+      *            Current library . . . . . . . . .   ___________             *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                                                        *
+      *                                     (C) COPYRIGHT IBM CORP. 19XX, 19YY.*
+      **************************************************************************
+      *
+      * |--------|---------|---------|---------|---------|---------|---------|--
+      *  1       10        20        30        40        50        60        70
+      *
+      ***********************************************************
+      *                                                         *
+      *  RECORD FORMAT -- NAME: SIGNON                          *
+      *               FUNCTION: SIGN ON DISPLAY                 *
+      *               INDICATORS USED: 01 02                    *
+      *               FUNCTION KEYS USED: NONE                  *
+      *               NUMBER OF I/O FIELDS:  11                 *
+      *               KEYWORDS USED: DSPATR CHGINPDFT CLEAR     *
+      *                              CHECK                      *
+      *                                                         *
+      ***********************************************************
+      *
+     A          R SIGNON
+     A                                      CLEAR
+     A                                      BLINK
+     A                                 01 23'             Sign On             '
+     A                                      DSPATR(HI)
+     A                                 02 48'System  . . . . . :'
+     A            SYSNAME        8   O 02 70
+     A                                 03 48'Subsystem . . . . :'
+     A            SBSNAME       10   O 03 70
+     A                                 04 48'Display . . . . . :'
+     A            DEVNAME       10   O 04 70
+     A                                 06 17'User  . . . . . . . . . . . . . .'
+     A            USERID        10   B 06 53
+     A  01                             07 17'Password  . . . . . . . . . . . .'
+     A  01        PASSWRD      128   I 07 53CHECK(LC)
+     A                                      DSPATR(ND)
+     A            PROGRAM       10   B 10 53CHECK(LC)
+     A                                      DSPATR(ND)
+     A            MENU          10   B 11 53CHECK(LC)
+     A                                      DSPATR(ND)
+     A            CURLIB        10   B 12 53CHECK(LC)
+     A                                      DSPATR(ND)
+     A  02        QSNERROR      80   O 24 01DSPATR(HI)
+     A            COPYRIGHT     40   O 24 40DSPATR(ND)
+     A            UBUFFER      436   H
+                                       10 32'CCCCCCCCCC'
+                                       11 30'CCCCCCCCCCCCCC'
+                                       12 28'CCCCCCCCCCCCCCCCC'
+                                       13 22'C'
+                                       13 27'CCCCCCCCCCCCCCCCCCC'
+                                       14 19'CCCC'
+                                       14 25'CCCCCCCCC'
+                                       14 42'CCCC'
+                                       15 18'CCCCC'
+                                       15 26'CCCCCCCC'
+                                       15 45'C'
+                                       16 17'CCCCCCC'
+                                       16 27'CCCCCC'
+                                       16 36'CCCCCC'
+                                       17 17'CCCCCCCC'
+                                       17 28'CCCC'
+                                       17 35'CCCCCCCCC'
+                                       18 17'CCCCCCCCCC'
+                                       18 34'CCCCCCCCCCC'
+                                       19 17'CCCCCCCCCCCCCCC'
+                                       19 35'CCCCCCCCCCC'
+                                       20 18'CCCCCCCCCCCCCCC'
+                                       20 36'CCCCCCCCCC'
+                                       21 20'CCCCCCCCCCCC'
+                                       21 36'CCCCCCCCCC'
+                                       22 23'CCCC'
+                                       22 34'CCCCCCCCCCC'
+                                       23 29'CCCCCCCCCCCCCCC'
+                                       24 31'CCCCCCCCCC'
+                                       24 55'CDS AMERICAS'
+      *

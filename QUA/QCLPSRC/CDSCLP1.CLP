@@ -1,0 +1,5 @@
+PGM
+
+             WRKACTJOB  OUTPUT(*) SBS(OPSPORTAL)
+
+ENDPGM

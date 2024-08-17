@@ -1,0 +1,9 @@
+PGM
+             CRTPF      FILE(QTEMP/PEPITO) RCDLEN(100) SIZE(450000) +
+                          ALLOCATE(*YES)
+             OVRPRTF    FILE(QPQUPRFIL) MAXRCDS(*NOMAX)
+             RUNQRY     QRY(SERGIOC/DEMOSPACE)
+
+             DLYJOB     DLY(1800)
+             DLTSPLF    FILE(QPQUPRFIL) SPLNBR(*LAST)
+ENDPGM

@@ -1,0 +1,14 @@
+PGM
+
+             ADDLIBLE   LIB(ACMSCTL)
+             MONMSG     MSGID(CPF0000 CPF2103)
+
+             STRSBS     SBSD(ACMSCTL/ALDONDMI)
+             MONMSG     MSGID(CPF0000)
+
+             STRSBS     SBSD(ACMSCTL/ALDONLMI)
+             MONMSG     MSGID(CPF0000)
+
+             SNDPGMMSG  MSG('SUB SISTEMA ALDON LMI INICIADO')
+
+ENDPGM

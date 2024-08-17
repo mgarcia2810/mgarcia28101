@@ -1,0 +1,12 @@
+--  Generate SQL
+--  Version:                   V7R3M0 160422
+--  Generated on:              06/01/20 20:56:55
+--  Relational Database:       N2104FAW
+--  Standards Option:          Db2 for i
+
+CREATE VIEW FILEMG37 (
+  NOMBRE ,
+  CEDULA )
+  AS
+  ( SELECT * FROM FILEMG19 ) ;
+

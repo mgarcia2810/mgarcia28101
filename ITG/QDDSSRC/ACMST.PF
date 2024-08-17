@@ -1,0 +1,5 @@
+     A          R ACMSTR                    TEXT('ACCOUNT   ')
+     A            AACMTID       10          TEXT('ACCOUNT  ID   ')
+     A            AACNAME       20          TEXT('ACCOUNT  NAME ')
+     A            AACCTAT       20          TEXT('ACCOUNT NUMBERSS')
+     A            AACCTAW       10          TEXT('ACCOUNT NUMBERSS')

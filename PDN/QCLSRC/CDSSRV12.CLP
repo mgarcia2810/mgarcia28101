@@ -1,0 +1,14 @@
+PGM
+
+             ADDLIBLE   LIB(PTNSLIB07)
+             MONMSG     MSGID(CPF0000 CPF2103)
+
+             LSTRCAPSUM
+             MONMSG     MSGID(CPF0000)
+
+             STRPLSSMON
+             MONMSG     MSGID(CPF0000)
+
+             SNDPGMMSG  MSG('EXIT POINT MANAGER INICIADO')
+
+ENDPGM

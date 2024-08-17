@@ -1,0 +1,19 @@
+     H
+      /Free
+       EXEC SQL
+               INSERT INTO CDSLIB1/CDSLOT (LOPROD, LOLOT) VALUES('1234567890',
+               '7777777777');
+
+       EXEC SQL
+               INSERT INTO CDSLIB1/CDSLOT (LOPROD, LOLOT) VALUES('0987654321',
+               '8888888888');
+
+       EXEC SQL
+               UPDATE CDSLIB1/CDSLOT SET LOLOT = '9999999999' WHERE LOLOT =
+               '7777777777';
+       EXEC SQL
+               ALTER TABLE CDSLIB1/CDSLOT ALTER COLUMN LOEXPD DROP NOT NULL;
+
+       *Inlr = *On;
+
+      /End-Free

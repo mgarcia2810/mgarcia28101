@@ -1,0 +1,3 @@
+PGM
+             DSPLIB     LIB(OSWALDO)
+ENDPGM

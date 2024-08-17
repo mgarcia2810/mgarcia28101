@@ -1,0 +1,15 @@
+PGM
+             ADDLIBLE   LIB(PTCMT3)
+             MONMSG     MSGID(CPF0000 CPF2103)
+             ADDLIBLE   LIB(PTCMT2)
+             MONMSG     MSGID(CPF0000 CPF2103)
+
+             ENDPTCMCSL
+             MONMSG     MSGID(CPF0000)
+
+             ENDPTCMEPT CLRREQUEST(Y)
+             MONMSG     MSGID(CPF0000)
+
+             SNDPGMMSG  MSG('COMPLIANCE MONITOR FINALIZADO')
+
+ENDPGM

@@ -1,0 +1,8 @@
+PGM
+
+             ADDLIBLE   LIB(CDSLIB1) POSITION(*LAST)
+             MONMSG     MSGID(CPF0000 CPF2103)
+
+             GO         MENU(CDSLIB1/CDSSRV01)
+
+ENDPGM

@@ -1,0 +1,70 @@
+     A* Free Form Menu: GIAPA5AA
+     A*%%TS  SD  20200121  163024  MGARCIA28   REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A                                      PRINT(*LIBL/QSYSPRT)
+     A          R GIAPA5AA
+     A*%%TS  SD  20200121  163024  MGARCIA28   REL-V7R3M0  5770-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A                                  1  2'GIAPA5AA'
+     A                                      COLOR(BLU)
+     A                                  1 32'GIAPA5AA Menu'
+     A                                      DSPATR(HI)
+     A                                  3  2'Select one of the following:'
+     A                                      COLOR(BLU)
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  5 12' Curr.user'
+     A                                      DSPATR(HI)
+     A                                  5 26'Job'
+     A                                      DSPATR(HI)
+     A                                  5 30'user'
+     A                                      DSPATR(HI)
+     A                                  5 39'Job'
+     A                                      DSPATR(HI)
+     A                                  5 43'name'
+     A                                  5 50'  CPU HH:MM:SS.sss   Program      -
+     A                                               BINPOSRT     QUSER       '
+     A                                      DSPATR(HI)
+     A                                  6 39'QZRCSRVS'
+     A                                  7 39'QZHQSSRV'
+     A                                  8 39'QZDASOIN'
+     A                                  9 39'QZRCSRVS  '
+     A                                 10 39'QZRCSRVS'
+     A                                 11 39'QZRCSRVS'
+     A                                 12 39'QZRCSRVS'
+     A                                 13 39'QZDASOINIT'
+     A                                 14 39'QNPSERVS  '
+     A                                 15 39'QZDASOINIT'
+     A                                  6 50'       7:50:35.605   WE0081       -
+     A                                               BINELECT     QUSER       '
+     A                                  7 50'       2:11:58.013   QZHQSSRV     -
+     A                                               BINOMNILG    QUSER       '
+     A                                  8 50'       1:49:16.400   EX_CASQL2    -
+     A                                               BINCASH1     QUSER       '
+     A                                  9 50'       1:33:52.695   WE0110       -
+     A                                               BINOMNIA     QUSER       '
+     A                                 10 50'       1:33:37:107   SCTA020      -
+     A                                               BINMAENG     QUSER       '
+     A                                 11 50'         20:14.316   QZRCSRV      -
+     A                                               BINVIERN     QUSER       '
+     A                                 12 50'         14:40:819   QZRCSRV      -
+     A                                               BINELECT     QUSER       '
+     A                                 13 50'         10:21:190   EX_CASQL2    -
+     A                                               BINMAENG     QUSER       '
+     A                                 14 50'          8:49.342   QPNSERV      -
+     A                                               BINDATAW     QUSER       '
+     A                                 15 60'8:30.817'
+     A                                 15 71'QZDASONIT'

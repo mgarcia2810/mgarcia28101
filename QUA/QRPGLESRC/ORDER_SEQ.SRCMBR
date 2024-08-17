@@ -1,0 +1,14 @@
+--  Generate SQL
+--  Version:                   V7R3M0 160422
+--  Generated on:              05/21/20 13:42:44
+--  Relational Database:       N2104FAW
+--  Standards Option:          Db2 for i
+
+CREATE SEQUENCE ORDER_SEQ
+  AS INTEGER
+  START WITH 500
+  INCREMENT BY 1
+  MINVALUE 500
+  MAXVALUE 1000
+  CYCLE CACHE 24 NO ORDER ;
+

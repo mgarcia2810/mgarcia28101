@@ -1,0 +1,63 @@
+     A* Free Form Menu: CDSSRV02
+     A*%%TS  SD  20191118  144714  MGARCIA28   REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A                                      PRINT(*LIBL/QSYSPRT)
+     A          R CDSSRV02
+     A*%%TS  SD  20191118  144714  MGARCIA28   REL-V7R3M0  5770-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  2  3SYSNAME
+     A                                  3  2USER
+     A                                  2 68DATE
+     A                                      EDTCDE(Y)
+     A                                  3 68TIME
+     A                                  3 26'MENU DE SERVICIOS ROCKET ALDON '
+     A                                      DSPATR(HI)
+     A                                      COLOR(RED)
+     A                                  4 33'MENU  CDSSRV02'
+     A                                      DSPATR(HI)
+     A                                      COLOR(TRQ)
+     A                                  2 34'CDS AMERICAS'
+     A                                      DSPATR(HI)
+     A                                  6  3'1.- Inicio Servicios Aldon LMi (CD-
+     A                                      SSRV02)'
+     A                                  7  3'2.- Fin Servicios Aldon LMi    (CD-
+     A                                      SSRV03)'
+     A                                 19 46'90.... Regresa Menu Anterior'
+     A                                      DSPATR(HI)
+     A                                  9  3'3.- Inicio Servicios Aldon LMe (CD-
+     A                                      SSRV04)'
+     A                                 10  3'4.- Fin Servicios Aldon LMe    (CD-
+     A                                      SSRV05)'
+     A                                 18  2'11- WRKACTJOB Aldon LMi & LMe & OP-
+     A                                      S Portal & HTTP'
+     A                                      DSPATR(HI)
+     A                                      COLOR(BLU)
+     A                                 13  3'6.- Fin OPS Portal             (CD-
+     A                                      SSRV07)'
+     A                                 12  3'5.- Inicio OPS Portal          (CD-
+     A                                      SSRV06)'
+     A                                 16  2'10.- IR ALDON LMI STRLMI'
+     A                                      DSPATR(HI)
+     A                                  6 46'12.- URL Links Accesos Browser'
+     A                                      DSPATR(HI)
+     A                                 12 46'Dlyjob 35'
+     A                                      DSPATR(HI)
+     A                                 13 46'Dlyjob 35'
+     A                                      DSPATR(HI)
+     A                                 15  3'9.- IR ALDON S/Compare Harmonizer'
+     A                                      DSPATR(HI)

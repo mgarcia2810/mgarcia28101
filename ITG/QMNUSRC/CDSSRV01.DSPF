@@ -1,0 +1,58 @@
+     A* Free Form Menu: CDSSRV01
+     A*%%TS  SD  20200525  204214  MGARCIA28   REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A                                      PRINT(*LIBL/QSYSPRT)
+     A          R CDSSRV01
+     A*%%TS  SD  20200525  204214  MGARCIA28   REL-V7R3M0  5770-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  2  3SYSNAME
+     A                                  3  2USER
+     A                                  2 68DATE
+     A                                      EDTCDE(Y)
+     A                                  3 68TIME
+     A                                  3 23'MENU DE SERVICIOS PRODUCTOS INSTAL-
+     A                                      DOS'
+     A                                      DSPATR(HI)
+     A                                  4 33'MENU  CDSSRV01'
+     A                                      DSPATR(HI)
+     A                                      COLOR(TRQ)
+     A                                  2 34'CDS AMERICAS'
+     A                                      DSPATR(HI)
+     A                                  7  3'1.- Menu Rocket Aldon ...'
+     A                                  7 29'CDSSRV02'
+     A                                      DSPATR(HI)
+     A                                  8  3'2.- Menu PowerTech ......'
+     A                                  8 29'CDSSRV03'
+     A                                      DSPATR(HI)
+     A                                 19 59'90 .....Salir'
+     A                                      DSPATR(HI)
+     A                                 11  3'4.- Menu GiAPA ..........'
+     A                                 11 29'CDSSRV04'
+     A                                      DSPATR(HI)
+     A                                 13  3'5.- iCluster ............'
+     A                                 13 29'DMCLUSTER'
+     A                                      DSPATR(HI)
+     A                                 14  3'6.- MIMIX ...............'
+     A                                 14 29'WRKPRD'
+     A                                      DSPATR(HI)
+     A                                 10  3'3.- Robot Help Systems...'
+     A                                 10 29'RBO'
+     A                                      DSPATR(HI)
+     A                                 16  2'20.- URL Links Accesos Browser IBM-
+     A                                      i'
+     A                                      DSPATR(HI)

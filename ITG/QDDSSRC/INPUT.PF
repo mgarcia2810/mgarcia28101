@@ -1,0 +1,4 @@
+     A          R RINPUT                    TEXT('INPUT     ')
+     A            INPUTID       10          TEXT('INPUT    ID   ')
+     A            INPUTDESC     20          TEXT('INPUT DESCRIP.')
+     A            INPUTACC      20          TEXT('ACCOUNT NUMBERSS')

@@ -1,0 +1,3 @@
+             PGM
+             WRKSPLF    SELECT(*CURRENT)
+             ENDPGM

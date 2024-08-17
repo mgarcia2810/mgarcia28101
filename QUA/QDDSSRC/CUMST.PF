@@ -1,0 +1,4 @@
+     A          R CUMSTR                    TEXT('CUSTOMER  ')
+     A            ACUSTID       10          TEXT('CUSTOMER ID   ')
+     A            ANAME         20          TEXT('CUSTOMER NAME ')
+     A            ACCOUNT       20          TEXT('CUSTOMER ACCOUNT')

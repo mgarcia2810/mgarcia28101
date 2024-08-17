@@ -1,0 +1,50 @@
+/************************************************/
+/* CDS AMERICAS                   11 JUNIO 2021 */
+/*                                              */
+/* DESCRIPCION: PROCEDIMIENTO ENVIAR CORREO     */
+/*              DESDE ESEND                     */
+/*                                              */
+/* MIGUEL GARCIA                                */
+/*                                              */
+/************************************************/
+             PGM
+             DCL        VAR(&NOMBRESPL) TYPE(*CHAR) LEN(10) +
+                          VALUE('ANEXO_0001')
+       /**************************************************************/
+       /* Declaracion de Variables                                   */
+       /**************************************************************/
+             DCL        VAR(&JOB1) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&USER1) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&NBR1) TYPE(*CHAR) LEN(6)
+             DCL        VAR(&MAIL) TYPE(*CHAR) LEN(200) +
+                          VALUE('soporte@cdsamericas.com')
+
+       /*******************************************************/
+       /* Adiciona Librerias                                  */
+       /*******************************************************/
+             ADDLIBLE   LIB(ESEND)
+             MONMSG     MSGID(CPF2103)
+
+       /*******************************************************/
+       /* Captura Atributos del Trabajo para envio via ESEND  */
+       /*******************************************************/
+             RTVJOBA    JOB(&JOB1) USER(&USER1) NBR(&NBR1)
+
+       /***************************************************************/
+       /*    Informe de Valores del Sistema    envio x correo ESEND   */
+       /***************************************************************/
+
+        /*** Generacion del Informe                                  ***/
+             WRKSYSVAL  OUTPUT(*PRINT)
+             MONMSG     MSGID(CPF0000)
+
+         /*** Envio via correo por Herramienta ESEND IBMI             ***/
+             ESNDFILE   RECIPIENT(&MAIL) SUBJECT('ESEND Demo 1 - +
+                          Envio spool desde CLLE') MSG('CDS DEMO +
+                          ESEND envio desde CLLE CDSESEND1 Libreria +
+                          CDSLIBPDN1 incluido en Aldon LMi') +
+                          TYPE(*SPL) ATTFILE(&NOMBRESPL) +
+                          SPLF(QSYSPRT) JOB(&NBR1/&USER1/&JOB1)
+                     MONMSG     MSGID(CPF0000)
+
+             ENDPGM

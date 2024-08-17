@@ -1,0 +1,39 @@
+/****************************************************/
+/*  CDS AMERICAS                15 Marzo 2021       */
+/*                                                  */
+/*  DESARROLLADO POR MIGUEL GARCIA                  */
+/*                                                  */
+/*  DESCRIPCION  Sincronizacion Aldon Git           */
+/*                                                  */
+/****************************************************/
+             PGM        PARM(&ACTCODE &TIMCODE &FILEREC &FILENAM +
+                          &LIBNAM &CMPLCDE)
+
+/*  Define parameters passed to this program.                  */
+
+             DCL        VAR(&ACTCODE) TYPE(*CHAR) LEN(3)
+             DCL        VAR(&TIMCODE) TYPE(*CHAR) LEN(2)
+             DCL        VAR(&FILEREC) TYPE(*CHAR) LEN(288)
+             DCL        VAR(&FILENAM) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&LIBNAM) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&CMPLCDE) TYPE(*CHAR) LEN(1)
+
+             ADDLIBLE   LIB(ACMSLIB)
+             MONMSG     MSGID(CPF2103 CPF0000)
+
+     /*                                                  */
+     /*  Sincronizacion Aldon LMi IFS GitLMi1            */
+     /*                                                  */
+             SBMJOB     CMD(ACMSLIB/LMIGITSYNC GRP(CDS) PRD(CDS) +
+                          REL(BASE)) JOB(LMIGITSYNC) USER(ALDONCMS)
+             MONMSG     MSGID(CPF0000)
+
+ /*The completion code parameter is your way of communicating */
+ /*the success or failure of the exit back to Aldon/CMS.  A   */
+ /*non-zero value signifies an abnormal completion; Aldon/CMS */
+ /*will stop or continue the function based on the "Stop on   */
+ /*Exit Error" flag.                                          */
+
+             CHGVAR     VAR(&CMPLCDE) VALUE('0')
+
+             ENDPGM

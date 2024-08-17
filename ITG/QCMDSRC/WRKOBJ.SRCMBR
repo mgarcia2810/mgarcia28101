@@ -1,0 +1,10 @@
+             CMD        PROMPT('Work with Objects')
+
+             PARM       KWD(OBJ) TYPE(*CHAR) LEN(11) MIN(1) +
+                          CHOICE('Name, generic*, *ALL') +
+                          PROMPT('Object')
+             PARM       KWD(LIB) TYPE(*CHAR) LEN(11) RSTD(*NO) +
+                          DFT(*LIBL) PROMPT('Library')
+             PARM       KWD(TYP) TYPE(*CHAR) LEN(7) RSTD(*NO) +
+                          DFT(*ALL) PROMPT('Type')
+

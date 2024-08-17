@@ -1,0 +1,3 @@
+PGM
+             DSPLIB     LIB(QGPL) OUTPUT(*PRINT)
+ENDPGM

@@ -1,0 +1,6 @@
+PGM
+ STRPCO
+             MONMSG     MSGID(IWS4010)
+ STRPCO
+             MONMSG     MSGID(IWS4010)
+ENDPGM

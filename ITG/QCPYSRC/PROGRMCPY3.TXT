@@ -1,0 +1,9 @@
+D                 DS                  INZ
+D  PAR1                   1      4
+D  BLK1                   5      5
+D  PAR2                   6      9
+D  BLK2                  10     10
+D  PAR3                  11     16
+D  TOTPAR                 1     16
+D  DEPSTR                 1      2
+D  MUNSTR                 3      4

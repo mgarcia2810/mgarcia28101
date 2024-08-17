@@ -1,0 +1,86 @@
+     A* Free Form Menu: GIAPA5A
+     A*%%TS  SD  20200121  163024  MGARCIA28   REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3                  -
+     A                                             27 132 *DS4)
+     A                                      CHGINPDFT
+     A                                      INDARA
+     A                                      PRINT(*LIBL/QSYSPRT)
+     A          R GIAPA5A
+     A*%%TS  SD  20200121  163024  MGARCIA28   REL-V7R3M0  5770-WDS
+     A                                      DSPMOD(*DS3)
+     A                                      LOCK
+     A                                      SLNO(01)
+     A                                      CLRL(*ALL)
+     A                                      ALWROL
+     A                                      CF03
+     A                                      HELP
+     A                                      HOME
+     A                                      HLPRTN
+     A                                  1  2'GIAPA5A'
+     A                                      COLOR(BLU)
+     A                                  1 33'GIAPA5A Menu'
+     A                                      DSPATR(HI)
+     A* CMDPROMPT  Do not delete this DDS spec.
+     A                                019  2'Selection or command              -
+     A                                          '
+     A                                  4  8'Curr.user'
+     A                                      DSPATR(HI)
+     A                                  4 21'Job'
+     A                                      DSPATR(HI)
+     A                                  4 25'user'
+     A                                  4 34'Job'
+     A                                      DSPATR(HI)
+     A                                  4 38'name'
+     A                                      DSPATR(HI)
+     A                                  4 47'CPU'
+     A                                      DSPATR(HI)
+     A                                  4 51'HH:MM:SS.sss'
+     A                                      DSPATR(HI)
+     A                                  5  8'BINPOSRT'
+     A                                  5 21'QUSER'
+     A                                  5 34'QZRCSRVS'
+     A                                  5 52'4:28:35.482'
+     A                                  6  8'BINELECT'
+     A                                  6 21'QUSER'
+     A                                  6 34'QZHQSSRV'
+     A                                  6 52'2:19:04.010'
+     A                                  7  8'BINCASH1'
+     A                                  7 21'QUSER'
+     A                                  7 34'QZRCSRVS'
+     A                                  7 52'1:41:36.648'
+     A                                  8  8'BINOMNILG'
+     A                                  8 21'QUSER'
+     A                                  8 34'QZDASOINIT'
+     A                                  8 52'1:35:02.465'
+     A                                  9  8'BINOMNIA'
+     A                                  9 21'QUSER'
+     A                                  9 34'QZRCSRVS'
+     A                                  9 52'1:31:53.029'
+     A                                 10  8'BINMAENG'
+     A                                 10 21'QUSER'
+     A                                 10 34'QZRCSRVS'
+     A                                 10 54'19:38.940'
+     A                                 11  8'BINATMSW'
+     A                                 11 21'QUSER'
+     A                                 11 34'QZRCSRVS'
+     A                                 11 54'11:47.691'
+     A                                 12  8'BINDATAW'
+     A                                 12 21'QUSER'
+     A                                 12 34'QZDASOINIT'
+     A                                 12 55'8:33.623'
+     A                                 13  8'BINELECT'
+     A                                 13 21'QUSER'
+     A                                 13 34'QZDASOINIT'
+     A                                 13 55'7:25.796'
+     A                                  4 66'Program'
+     A                                      DSPATR(HI)
+     A                                  5 66'WE0081'
+     A                                  6 66'QZHQSSRV'
+     A                                  7 66'WE0110'
+     A                                  8 66'QZDASOINIT'
+     A                                  9 66'SCTA020'
+     A                                 10 66'QZRCSRVS'
+     A                                 11 66'QZRCSRVS'
+     A                                 12 66'QZDASOINIT'
+     A                                 13 66'QZDASOINIT'
